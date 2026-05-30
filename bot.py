@@ -7,7 +7,7 @@ from aiogram.types import Message, CallbackQuery, InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 TOKEN = os.getenv("BOT_TOKEN")
-ADMIN_ID = 123456789  # <-- замени на свой Telegram ID
+ADMIN_ID = 8401605572  # <-- замени на свой Telegram ID
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
@@ -21,10 +21,9 @@ confirmed = set()   # кто нажал "Я підписався"
 def start_keyboard():
     kb = InlineKeyboardBuilder()
 
-    kb.add(InlineKeyboardButton(text="📢 Канал 1", url="https://t.me/channel1"))
-    kb.add(InlineKeyboardButton(text="📢 Канал 2", url="https://t.me/channel2"))
-    kb.add(InlineKeyboardButton(text="📢 Канал 3", url="https://t.me/channel3"))
-    kb.add(InlineKeyboardButton(text="📢 Канал 4", url="https://t.me/channel4"))
+    kb.add(InlineKeyboardButton(text="📢 Канал 1", url="https://t.me/+o5RAvVlVDCwzYmRk"))
+    kb.add(InlineKeyboardButton(text="📢 Канал 2", url="https://t.me/+UNTJxMzGg6E2MTU6"))
+    kb.add(InlineKeyboardButton(text="📢 Канал 3", url="https://t.me/+_WAO39LmkNIwM2I6"))
 
     kb.add(
         InlineKeyboardButton(
@@ -43,7 +42,7 @@ def access_keyboard():
     kb.add(
         InlineKeyboardButton(
             text="🔥 Матеріали тут",
-            url="https://t.me/ТВОЙ_КАНАЛ"
+            url="https://t.me/+o5RAvVlVDCwzYmRk"
         )
     )
 
