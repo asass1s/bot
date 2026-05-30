@@ -84,13 +84,8 @@ async def start(message: Message):
 @dp.message()
 async def reminder(message: Message):
 
-    user_id = message.from_user.id
-
-    if user_id in confirmed:
-        return
-
     await message.answer(
-        "⚠️ Спочатку завершіть активацію доступу.\n\n"
+        "⚠️ Спочатку завершіть активацію доступу.\n"
         "Підпишіться на канали та натисніть кнопку нижче:",
         reply_markup=start_keyboard()
     )
